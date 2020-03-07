@@ -1,0 +1,76 @@
+resb---> directiva de datos... establece un espacio en memoria con inicializacion
+asignar en variables con corchetes
+transformar de numero a cadena se suma '0' add eax,'0'
+transformar de cadena a numero se resta '0' sub eax,'0'
+variables a variable no hay como
+
+-Salto no condicional
+jmp --> instruccion que salta hacia una etiqueta que es un posicion en memoria
+
+-Salto Condicional (jnnn)
+Jz JP JA 
+
+-LOOP--> para establecer ciclos
+
+-call--> para las subrutinas las llama y llamados a etiquetas
+
+#Saltos
+
+Je-->de igualdad--se activa la bandera de (ZR)
+cmp--> instruccion de comparacion  es el que altera la bandera
+
+jz--> resultado es cero
+jmp--> si Restriccion
+jg-->operando 1 > operando 2
+js-->signal = 0 pl (positivo)
+            = 1 ng (Negativo)
+jb-->operador 1 < operador 2
+
+            CF      ZF
+cmp(5,4)    0       0
+cmp(4,5)    1       0
+cmp(5,5)    0       1
+
+programacion normal esamblador 
+
+porque no utilizar la misma interrupcion para diferentes SO 
+por el tipo de organizacion por las diferencias en la interaccion de las instruscciones 
+
+
+realizar lo del path ahora en vez de 39 que vaya 8
+
+LOOP 
+salta a un espacio en memoria
+-dec solo ecx solo trabaja con ese
+tiene un salto corto en la misma section
+solo al final modifica la bandera de ZF
+
+
+call - ret
+saltos saltan a una posicion especifica de memoria
+puede saltar a diferentes segmentos
+no salta a espacios en memoria
+no altera los registros de proposito general
+
+
+Subrutina se ubica en el SO
+
+todos los saltos saltan a una posicion especifica de memoria
+jmp no altera banderas
+verifica el estado de la bandera y de acuerdo a eso realiza la instruscion 
+jnn no altera 
+
+
+Tarea imprmir el triangulo al revez
+
+Arreglos
+manejo con caracteres que son el SI y DI maneja las posiciones
+SI --> da el inicio y señala la longitud del Arreglos
+
+
+eax,5 ;tipo de subrutina-->(read)
+ebx,aqui se establece la ubicacion de una variable
+lectura y escritura ecx,edx formas de acceso/permisos --> se necesita para poder trabajar con archivos
+
+test --> registros, memoria memoria
+cuando la bandera 0 es =0 la direccion no existe
