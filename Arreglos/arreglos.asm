@@ -95,6 +95,7 @@ incrementar:
     ;comparar ṕara el salto
     cmp edi,len_arreglo
     jb mayor
+    
     jmp presentar
 
 presentar:

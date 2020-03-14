@@ -31,7 +31,7 @@ section .bss
 	n1 resb 1
 	n2 resb 1
 
-section .text
+section .text 
     global _start
 _start:
     escribir msj01,len01
