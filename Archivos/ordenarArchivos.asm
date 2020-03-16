@@ -71,6 +71,7 @@ readFileNum1:
 ; iniciar ordenamiento
     mov esi, array
     mov edi, 0
+    
 initOrder:
     ;asignacion en las posiciones efectivas
     mov esi, array
